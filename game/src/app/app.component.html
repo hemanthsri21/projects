@@ -1,0 +1,68 @@
+<div id="one">
+  <div style="padding-top: 150px; padding-left: 300px;">
+
+    <h1 style="font-size:50px; text-decoration:underline; margin-left: -50px; margin-top: -20px;">Number Guessing Game
+    </h1>
+    <h4>Objective: The goal of the game is to guess a sequence of 4 random numbers correctly. The numbers can range from
+      0 to 9, and your task is to figure out both the value and position of each digit. <br>
+      '+' means that the guessed number and its position are both correct. <br>
+      '-' indicates that the guessed number is correct, but its position is wrong. <br>
+      '*' implies that the guessed number is incorrect and does not exist in the sequence.</h4>
+    <div style="display: flex; justify-content: end; padding-right: 30px;">
+      <!-- <p>{{userName}} {{'guessed in'}} {{ getLeastTries() }} {{'tries'}}</p> -->
+
+
+    </div>
+
+    <div style="display: flex;">
+      <label style="font-size: x-large; font-weight: bolder; display: flex;">Enter your name:</label>
+      <input id="uname" type="text" placeholder="--name--" required="please enter your name" autofocus
+        (blur)="onBlur($event)" [(ngModel)]="userName" />
+    </div> <br>
+
+    <button id="start" (click)="startNewGame()">Start Game</button>
+
+    <!-- <h1 (onload)="time()" id="timer"></h1> -->
+
+    <h2 style="padding-left: 100px;">{{ 'Hello' }} {{ userName }} </h2>
+
+    <p *ngFor="let item of guessArray">{{ item }}</p>
+
+    <input id="e-value" type="text" [(ngModel)]="tryInput" maxlength="4" />
+    <button id="check" (click)="validate()">check</button>
+
+    <h2 style="text-decoration: underline;">Best Scores:</h2>
+    <ul>
+      <li *ngFor="let user of users">{{ user.userName }}: {{ user.try }}</li>
+    </ul>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- <div>
+  <table>
+    <thead>
+      <tr>
+        <td>Name</td>
+        <td>Try</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user?.userName }}</td>
+        <td>{{ user?.try }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
