@@ -1,0 +1,71 @@
+<form [formGroup]="myform">
+
+  <div>
+    <label>name:</label>
+    <input type="text" formControlName="name">
+    <div *ngIf="myform.controls['name'].invalid && myform.controls['name'].touched">
+      <div *ngIf="myform.controls['name'].errors?.['required']" class="error">Name is required</div>
+      <div *ngIf="myform.controls['name'].errors?.['invalidName']" class="error">Invalid name. Only letters and spaces
+        are allowed</div>
+    </div>
+  </div>
+
+  <div>
+    <label>phone:</label>
+    <input type="text" formControlName="phone">
+    <div *ngIf="myform.controls['phone'].invalid && myform.controls['phone'].touched">
+      <div *ngIf="myform.controls['name'].errors?.['invalidPh']">ph is required</div>
+      <div *ngIf="myform.controls['name'].errors?.['required']">ph is required</div>
+    </div>
+  </div>
+
+  <div>
+    <label>email:</label>
+    <input type="email" formControlName="email">
+    <div *ngIf="myform.controls['email'].invalid && myform.controls['email'].touched">
+      <div *ngIf="myform.controls['email'].errors?.['required']">email is req</div>
+      <div *ngIf="myform.controls['email'].errors?.['invalidEmail']">email is req</div>
+
+    </div>
+  </div>
+
+  <div>
+    <label>age</label>
+    <input type="number" formControlName="age" required>
+    <div *ngIf="myform.controls['age'].invalid && myform.controls['age'].touched">
+      <div *ngIf="myform.controls['age'].errors?.['required']">age is req</div>
+      <div *ngIf="myform.controls['age'].errors?.['invalidage']">age is invalid</div>
+    </div>
+  </div>
+
+  <button (click)="add()" *ngIf="!whenedit">add user</button>
+  <button (click)="update()" *ngIf="whenedit">update user</button>
+
+
+</form>
+
+<div>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>phone</th>
+        <th>email</th>
+        <th>age</th>
+        <th>actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of data ; let i=index">
+        <td>{{user.name}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.age}}</td>
+      <td>
+          <button (click)="edit(user,i)">edit</button>
+          <button (click)="delet(i)">delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
