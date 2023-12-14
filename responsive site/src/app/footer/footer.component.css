@@ -1,0 +1,36 @@
+p{
+    color: #c6a971;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 13px;
+	margin: 20px 0 0;
+    
+}
+
+.nav-link{
+    font-size: medium;
+}
+
+#connect a#facebook {
+	background: url(src/assets/images/icons.png) no-repeat 0 0;
+}
+#connect a#facebook:hover {
+	background: url(src/assets/images/icons.png) no-repeat -18px 0;
+}
+#connect a#twitter {
+	background: url(src/assets/images/icons.png) no-repeat 0 -28px;
+}
+#connect a#twitter:hover {
+	background: url(src/assets/images/icons.png) no-repeat -18px -28px;
+}
+#connect a#googleplus {
+	background: url(src/assets/images/icons.png) no-repeat 0 -56px;
+}
+#connect a#googleplus:hover {
+	background: url(src/assets/images/icons.png) no-repeat -18px -56px;
+}
+
+#connect a{
+    color: rgba(245,241,230,255);
+}

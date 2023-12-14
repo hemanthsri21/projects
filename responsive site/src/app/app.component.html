@@ -1,0 +1,71 @@
+<div class="page container mt-5">
+    <!-- <nav class="navbar navbar-expand-md navbar-light">
+
+        <div class="container-fluid">
+
+            <img class="navbar-brand" style="position: relative;" src="assets/images/logo.png" alt="">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse  navbar-collapse d-flex justify-content-around" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link " routerLink="" href="#home" aria-current="page">HOME</a>
+
+                    <a class="nav-link" routerLink="" href="#menu">MENU</a>
+
+                    <a class="nav-link" routerLink="" href="#ourstory">LOCATIONS</a>
+
+                    <a class="nav-link" routerLink="" href="#ourstory">BLOG</a>
+
+                    <a class="nav-link" href="#contact">CONTACT</a>
+
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex" routerLink="home" >
+                <img src="assets/images/logo.png" aria-current="page" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-4" routerLink="home" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" routerLink="menu" href="#">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" routerLink="locations" href="#">LOCATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" routerLink="blog" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" routerLink="contact" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" routerLink="about" href="#">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+
+</div>

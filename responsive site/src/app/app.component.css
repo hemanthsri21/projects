@@ -1,0 +1,14 @@
+.page{
+    background-color: rgba(245,241,230,255);
+}
+
+/* .logobg{
+    position: absolute;
+    z-index:-1;
+} */
+
+.nav-link{
+    /* font-size:  x-large; */
+	color: #db9e29;    
+}
+

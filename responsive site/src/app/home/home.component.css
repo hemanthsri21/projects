@@ -1,0 +1,48 @@
+.home{
+	background-image: url(src\assets\images\headline-home.jpg);
+	background-position:top;
+	background-repeat: no-repeat;
+	background-size:  100%;
+}
+
+.card-img-top{
+    border: whitesmoke 2px solid;
+}
+
+h3{
+	color: #f9b94b;
+	font-size: 65px;
+	line-height: 70px;
+	text-shadow: 1px 5px #824622;
+	width: 700px;
+	font-family: 'UltraRegular';
+}
+
+
+.card-group{
+    border: none;
+}
+
+.card{
+	border: none;
+}
+
+.card-title{
+	font-family: 'ultraRegular';
+
+}
+
+.nav-link{
+    font-size: medium;
+}
+
+.card-text{
+	color: #d5af87;
+}
+
+h5{
+	color: #899148;
+}
+
+
+

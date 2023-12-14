@@ -1,0 +1,44 @@
+.menu {
+	background-image: url(src\assets\images\headline-menu.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h3 {
+	color: #dade7d;
+	font-size: 55px;
+	line-height: 70px;
+	text-shadow: 1px 5px #824622;
+	width: 700px;
+	font-family: 'UltraRegular';
+}
+
+.card-title {
+	background: url(src\assets\images\bg-item-title.png)no-repeat center top;
+	height: 57px;
+	float: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	/* width: 142px; */
+}
+
+
+h5 {
+	align-items: baseline;
+	color: #bcc680;
+	/* display: inline-block; */
+	font-family: 'UltraRegular';
+	font-size: 15px;
+	/* letter-spacing: 0.025em; */
+	/* line-height: 20px; */
+}
+
+p {
+	font-size: 13px;
+	letter-spacing: 0.025em;
+	line-height: 10px;
+	color: #d5af87;
+	font-family: Georgia;
+}
